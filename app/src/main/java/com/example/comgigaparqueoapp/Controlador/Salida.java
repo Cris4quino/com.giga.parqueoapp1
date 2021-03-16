@@ -310,13 +310,13 @@ public class Salida extends Fragment {
                     public void onClick(DialogInterface dialog, int which) {
                         EditText edplaca=(EditText) vista.findViewById(R.id.et_buscar);
                         edplaca.setText("");
-                        Toast.makeText(getContext(),"Eliminamos datos...",Toast.LENGTH_SHORT).show();
+                        Toasty.info(getContext(),"Eliminamos datos...",Toast.LENGTH_SHORT).show();
                     }
                 })
                 .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(getContext(),"Cancel...",Toast.LENGTH_SHORT).show();
+                        Toasty.info(getContext(),"Cancel...",Toast.LENGTH_SHORT).show();
                         dialog.dismiss();
                     }
                 })
