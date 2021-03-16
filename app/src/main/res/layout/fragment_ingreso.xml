@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.Ingreso">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="284dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_placa"
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp"
+                        android:gravity="center_horizontal"
+                        android:hint="Nº de Placa:"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:textSize="30sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center_horizontal"
+                        android:hint="Nombre"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:textSize="30sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_celular"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center_horizontal"
+                        android:hint="Celular"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:textSize="30sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="por hora">
+
+                </Button>
+
+                <RadioGroup
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cb_mediano"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mediano:\n \t 4 Bs"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/cb_grande"
+                        android:layout_width="104dp"
+                        android:layout_height="wrap_content"
+                        android:text="Grande:\n \t 5 Bs"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="por dia">
+
+                </Button>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cb_diurno"
+                        android:layout_width="98dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Diurno:\n\t20 Bs"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/cb_dianoche"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Dia y Noche:\n \t\t32 Bs"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="por noche">
+
+                </Button>
+
+                <RadioGroup
+                    android:layout_width="218dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cb_medianoN"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mediano:\n \t12 Bs"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/cb_grandeN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Grande:\n \t 20 Bs"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_guardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Imprimir y guardar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
